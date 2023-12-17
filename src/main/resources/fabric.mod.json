@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "testsystemmod",
+	"version": "${version}",
+	"name": "Test System Mod",
+	"description": "This is my First Real Go at creating a form of \"System\" that you would find in Mangas or Manhuas/Manhwas.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/testsystemmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.very_lucxy.testsystemmod.TestSystemMod"
+		],
+
+		"client": [
+			"net.very_lucxy.testsystemmod.TestSystemModClient"
+		],
+		"fabric-datagen": [
+			"net.very_lucxy.testsystemmod.TestSystemModDataGenerator"
+		]
+	},
+	"mixins": [
+		"testsystemmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
